@@ -1,0 +1,28 @@
+.requirement {
+    background-color: rgba(255, 145, 0, 0.15);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.requirement .requirement-header {
+    margin-bottom: 5px;
+}
+
+.requirement .requirement-title {
+    margin: 0;
+}
+
+.requirement .requirement-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.requirement .requirement-content {
+    padding-left: 90px;
+}
+
+.requirement ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}

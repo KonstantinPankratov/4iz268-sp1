@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/contacts.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <div class="row align-items-center justify-content-space-between">
+                <div class="col logo">
+                    <a href="/">
+                        <img src="/icons/logo.svg" alt="IVHQ" height="40">
+                    </a>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <a href="/">Home</a>
+                        </div>
+                        <div class="col">
+                            <a href="/programmes">Programmes</a>
+                        </div>
+                        <div class="col">
+                            <a href="/requirements">Requirements</a>
+                        </div>
+                        <div class="col">
+                            <a href="/how-it-works">How it works</a>
+                        </div>
+                        <div class="col">
+                            <a href="/contacts">Contacts</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <h1>Apply to programme</h1>
+
+            <form action="/" method="POST">
+                <div class="row">
+                    <div class="col">
+                        <div class="field">
+                            <label for="programme">Select programme</label>
+                            <select name="programme" id="programme">
+                                <option disabled selected>Select programme</option>
+                                <option value="">Agroculture</option>
+                                <option value="">a</option>
+                                <option value="">b</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row wrap">
+                    <div class="col">
+                        <div class="field">
+                            <label for="name">Enter your name</label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="field">
+                            <label for="email">Enter your email</label>
+                            <input type="text" name="email" id="email" placeholder="Enter your email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-full">
+                        <div class="field">
+                            <label for="message">Your message</label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button class="button">Send</button>
+            </form>
+        </main>
+
+        <footer class="main-footer text-center">
+            International Volunteer HQ © All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
