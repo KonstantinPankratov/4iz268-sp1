@@ -26,3 +26,9 @@
     list-style-type: disc;
     margin-left: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .requirement .requirement-content {
+        padding-left: 40px;
+    }
+}

@@ -50,6 +50,7 @@ ol, ul {
     margin-top: -100px;
     margin-bottom: 8w0px;
     height: calc(100vh - 80px);
+    min-height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,11 +93,37 @@ ol, ul {
     margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 1024px) {
+    .hero-content {
+        padding: 40px;
+    }
+    .hero-content .hero-title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        margin-top: -70px;
+        padding: 20px;
+    }
+    .hero-content {
+        padding: 20px;
+    }
+    .hero-content .hero-title {
+        font-size: 2rem;
+    }
+}
+
 /* Nav */
 
 .main-nav {
     padding: 30px 0;
     margin-bottom: 50px;
+}
+
+.main-nav a {
+    white-space: nowrap;
 }
 
 /* Footer */
@@ -177,13 +204,15 @@ ol, ul {
 }
 
 .row {
-    display: flex;
+    margin-top: -15px;
     margin-left: -15px;
     margin-right: -15px;
+    margin-bottom: -15px;
 }
 
+
 .row:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .row.wrap {
@@ -211,8 +240,14 @@ ol, ul {
 }
 
 .col {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.col.no-grow {
+    flex: none;
 }
 
 .col-3 {
@@ -229,4 +264,23 @@ ol, ul {
 
 .col-full {
     flex-basis: 100%;
+}
+
+@media screen and (min-width: 1025px) {
+    .row {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .row.is-mobile {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
