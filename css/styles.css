@@ -123,7 +123,23 @@ ol, ul {
 }
 
 .main-nav a {
+    padding: 10px;
+    border-radius: 5px;
     white-space: nowrap;
+    transition: background-color .25s;
+}
+
+.main-nav a.is-active {
+    color: #FFF;
+    background-color: #000;
+}
+
+.main-nav a:hover {
+    text-decoration: none;
+}
+
+.main-nav a:not(.is-active):hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
