@@ -300,3 +300,95 @@ ol, ul {
         padding-right: 30px;
     }
 }
+
+/* Programmes */
+
+.programmes .programme {
+    border-radius: 10px;
+    padding: 10px 10px 20px;
+    margin-bottom: 50px;
+    transition: background-color .25s;
+}
+
+.programmes .programme:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.programmes .programme img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    aspect-ratio: 72/35;
+}
+
+.programmes .programme .programme-content {
+    padding: 0 10px;
+}
+
+.programmes .programme .programme-content .key-info {
+    margin-bottom: 20px;
+}
+
+/* Requirements */
+
+.requirement {
+    background-color: rgba(255, 145, 0, 0.15);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.requirement .requirement-header {
+    margin-bottom: 5px;
+}
+
+.requirement .requirement-title {
+    margin: 0;
+}
+
+.requirement .requirement-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.requirement .requirement-content {
+    padding-left: 90px;
+}
+
+.requirement ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .requirement .requirement-content {
+        padding-left: 40px;
+    }
+}
+
+/* Contacts */
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 300px;;
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+    outline: 0;
+    padding: 15px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.025);
+}
